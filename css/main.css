@@ -1,8 +1,7 @@
-
-h1 {
-    font-family:Helvetica, Arial, sans-serif;
-    text-align:left;
-    margin: 1em;
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
 }
 
 a, a:hover, a:focus, a:active {
@@ -10,15 +9,156 @@ a, a:hover, a:focus, a:active {
     color: inherit;
 }
 
-body {
-    text-align: center;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    font-family: "Gotham-Medium", sans-serif;
+
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    font-size: 16px;
+  }
+  
+  .logo {
+    margin-right: auto;
+    font-family: Gotham-Light;
+    font-size: 16px;
+  }
+
+  .logo span {
+    font-family: Gotham-Medium;
+  }
+
+  .credits {
+    margin-right: auto;
+    font-family: Gotham-Medium;
+    font-size: 16px;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__links a, .cta,
+  .overlay__content a {
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+  }
+  
+    li {
+    padding: 0px 15px;
+  }
+  
+  li a {
+    transition: all 0.3s ease 0s;
+  }
+  
+  li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
 }
 
-#headerdiv
-{
-    font-weight: normal;
+
+  .cta {
+    margin-left: 20px;
+    border: 2px solid black;
+    padding: 5px;;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color:black;
+  }
+  
+  .cta:hover {
+    background-color: black;
+    color:white;
 }
-#headerdiv a
-{
-    font-weight: bold;
+
+@font-face {
+    font-family: "Gotham-Bold";
+    src: url(fonts/Gotham\ Bold.otf);
+}
+
+@font-face {
+    font-family: "Gotham-Light";
+    src: url(fonts/Gotham\ Light\ Regular.otf);
+}
+
+
+@font-face {
+    font-family: "Gotham-Book";
+    src: url(fonts/Gotham\ Book\ Regular.otf);
+}
+
+@font-face {
+    font-family: "Gotham-Medium";
+    src: url(fonts/Gotham\ Medium.otf);
+}
+
+ul {
+    list-style-type: none;
+ }
+
+
+ .botnav{
+    font-family: Gotham-Medium;
+    
+ }
+
+  footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: "Gotham-Medium";
+    font-size: 16px;
+    border-top: 1px solid black;
+    background-color: white;
+  }
+  
+  .bot_nav__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .bot_nav__links a, .cta,
+  .overlay__content a {
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+  }
+
+  h2 {
+    padding: 30px 10%;
+  }
+
+  h3 {
+    padding: 10px 10%;
+  }
+
+  .info {
+    padding: 0px 10%;
+    padding-bottom: 10%;
+    font-family: "Gotham-Medium";
+  }
+
+  p {
+    overflow: hidden;
+    max-width: 100ch;
+
+  }
+
+body {
+  font-family: "Gotham-Bold",Arial, Helvetica, sans-serif;
 }
